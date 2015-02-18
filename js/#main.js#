@@ -13,15 +13,12 @@ var play;
 
 function create() {
 
-    //  This creates a simple sprite that is using our loaded image and
-    //  displays it on-screen and assign it to a variable
-    
+	//the main menu of the game
     background = game.add.sprite(0, 0, 'mainmenu');
     play = game.add.sprite(150,400, 'play');
   
     //  Enables all kind of input actions on this image (click, etc)
     play.inputEnabled = true;
-
     play.events.onInputDown.add(listener, this);
 
 }
